@@ -29,15 +29,3 @@ class App extends React.Component {
 ReactDom.render(<App />, document.getElementById('root'))
 
 
-console.log('aaa')
-setTimeout(() => { console.log('bbb') }, 1000)
-const start = new Date();
-while (new Date() - start < 1000) {}
-console.log('ccc')
-setTimeout(()=>{console.log('ddd')},0)
-new Promise(function(resolve,reject){
-    console.log('eee');
-    foo.bar(100)
-}).then(()=>{console.log('fff')}).then(()=>{console.log('ggg')}).catch(()=>{console.log('hhh')})
-console.log('iiii')
-//aaa,ccc,eee,iiii,hhh,bbb,ddd
